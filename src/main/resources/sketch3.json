@@ -1,0 +1,378 @@
+{"lines": [
+        {
+          "start": {
+            "x": 0,
+            "y": 0
+          },
+          "end": {
+            "x": -4876800,
+            "y": 0
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 4876800,
+            "type": 1,
+            "focus": {
+              "x": -2438400,
+              "y": 0
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -4876800,
+            "y": 0
+          },
+          "end": {
+            "x": -4876800,
+            "y": -3048000
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 3048000,
+            "type": 1,
+            "focus": {
+              "x": -4876800,
+              "y": -1524000
+            },
+            "angle": -1.5707963267949,
+            "displacement": {
+              "x": -1,
+              "y": 0
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -4876800,
+            "y": -3048000
+          },
+          "end": {
+            "x": -4267200,
+            "y": -3048000
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 609600,
+            "type": 1,
+            "focus": {
+              "x": -4572000,
+              "y": -3048000
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -4267200,
+            "y": -3048000
+          },
+          "end": {
+            "x": -3657600,
+            "y": -3657600
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 862104.58762264,
+            "type": 1,
+            "focus": {
+              "x": -3962400,
+              "y": -3352800
+            },
+            "angle": -0.78539816339745,
+            "displacement": {
+              "x": -0.70710678118655,
+              "y": -0.70710678118655
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -3657600,
+            "y": -3657600
+          },
+          "end": {
+            "x": -2743200,
+            "y": -3657600
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 914400,
+            "type": 1,
+            "focus": {
+              "x": -3200400,
+              "y": -3657600
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -2743200,
+            "y": -3657600
+          },
+          "end": {
+            "x": -2438400,
+            "y": -3048000
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 681553.51954194,
+            "type": 1,
+            "focus": {
+              "x": -2590800,
+              "y": -3352800
+            },
+            "angle": 1.1071487177941,
+            "displacement": {
+              "x": 0.89442719099992,
+              "y": -0.44721359549996
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -2438400,
+            "y": -3048000
+          },
+          "end": {
+            "x": -914400,
+            "y": -3048000
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 1524000,
+            "type": 1,
+            "focus": {
+              "x": -1676400,
+              "y": -3048000
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": -914400,
+            "y": -3048000
+          },
+          "end": {
+            "x": 1524000,
+            "y": -3048000
+          },
+          "arcHeight": 609600,
+          "lengthLabel": {
+            "text": 2826395.8244689,
+            "type": 1,
+            "focus": {
+              "x": 304800,
+              "y": -3657600
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 1524000,
+            "y": -3048000
+          },
+          "end": {
+            "x": 1524000,
+            "y": -1828800
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 1219200,
+            "type": 1,
+            "focus": {
+              "x": 1524000,
+              "y": -2438400
+            },
+            "angle": 1.5707963267949,
+            "displacement": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 1524000,
+            "y": -1828800
+          },
+          "end": {
+            "x": 2438400,
+            "y": -1828800
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 914400,
+            "type": 1,
+            "focus": {
+              "x": 1981200,
+              "y": -1828800
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 2438400,
+            "y": -1828800
+          },
+          "end": {
+            "x": 2438400,
+            "y": -1219200
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 609600,
+            "type": 1,
+            "focus": {
+              "x": 2438400,
+              "y": -1524000
+            },
+            "angle": 1.5707963267949,
+            "displacement": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 2438400,
+            "y": -1219200
+          },
+          "end": {
+            "x": 1524000,
+            "y": -1219200
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 914400,
+            "type": 1,
+            "focus": {
+              "x": 1981200,
+              "y": -1219200
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 1524000,
+            "y": -1219200
+          },
+          "end": {
+            "x": 1524000,
+            "y": -609600
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 609600,
+            "type": 1,
+            "focus": {
+              "x": 1524000,
+              "y": -914400
+            },
+            "angle": 1.5707963267949,
+            "displacement": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 1524000,
+            "y": -609600
+          },
+          "end": {
+            "x": 0,
+            "y": -609600
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 1524000,
+            "type": 1,
+            "focus": {
+              "x": 762000,
+              "y": -609600
+            },
+            "angle": 0,
+            "displacement": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          "showLengthLabel": true
+        },
+        {
+          "start": {
+            "x": 0,
+            "y": -609600
+          },
+          "end": {
+            "x": 0,
+            "y": 0
+          },
+          "arcHeight": 0,
+          "lengthLabel": {
+            "text": 609600,
+            "type": 1,
+            "focus": {
+              "x": 0,
+              "y": -304800
+            },
+            "angle": 1.5707963267949,
+            "displacement": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          "showLengthLabel": true
+        }
+      ]
+      }

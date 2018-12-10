@@ -1,0 +1,52 @@
+{
+  "lines": [
+    {
+      "startX": 0.0,
+      "startY": 0.0,
+      "endX": 10.0,
+      "endY": 0.0
+    },
+    {
+      "startX": 10.0,
+      "startY": 0.0,
+      "endX": 10.0,
+      "endY": 9.0
+    },
+    {
+      "startX": 0.0,
+      "startY": 15.0,
+      "endX": 8.0,
+      "endY": 15.0
+    },
+    {
+      "startX": 0.0,
+      "startY": 0.0,
+      "endX": 0.0,
+      "endY": 15.0
+    },
+    {
+      "startX": 7.0,
+      "startY": 10.0,
+      "endX": 7.0,
+      "endY": 15.0
+    },
+    {
+      "startX": 7.0,
+      "startY": 15.0,
+      "endX": 8.0,
+      "endY": 15.0
+    },
+    {
+      "startX": 7.0,
+      "startY": 9.0,
+      "endX": 7.0,
+      "endY": 10.0
+    },
+    {
+      "startX": 7.0,
+      "startY": 9.0,
+      "endX": 10.0,
+      "endY": 9.0
+    }
+  ]
+}
