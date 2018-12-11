@@ -71,18 +71,21 @@ public class Line {
 	// =======================================================
 
 	public boolean containsX(double x) {
-		if (startX >= x && x >= endX) {
-			return true;
-		} else if (startX <= x && x <= endX) {
-			return true;
+		if (startX < endX) {
+			if (startX <= x && x <= endX) {
+				return true;
+			}
+		} else {
+			if (startX >= x && x >= endX) {
+				return true;
+			}
 		}
 		return false;
 	}
 
 	public boolean containsY(double y) {
-		if (startY >= y && y >= endY) {
-			return true;
-		} else if (startY <= y && y <= endY) {
+
+		if (startY <= y && y <= endY) {
 			return true;
 		}
 		return false;

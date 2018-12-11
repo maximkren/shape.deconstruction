@@ -14,7 +14,7 @@ import shape.deconstruction.entity.Shape;
 public class TriangleBuilder {
 
 	public Shape buildTriangle(Line line, Shape shape) {
-		
+
 		System.out.println("====start buildTriangle() ====");
 		Shape triangle = new Shape();
 		List<Line> relatedLines = shape.getRelatedLines(line);
@@ -32,7 +32,6 @@ public class TriangleBuilder {
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsX(line.getMidpoint().getX()) && !l.containsY(line.getMidpoint().getY()))
-							&& (l.getMinY() >= shape.getSuppositiveCenterPoint().getY() && l.getMinY() <= line.getMinY())
 							&& (l.getMaxY() >= shape.getSuppositiveCenterPoint().getY() && l.getMaxY() <= line.getMinY())) {
 
 						crossingLinesCounter++;
@@ -41,19 +40,19 @@ public class TriangleBuilder {
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType3(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType4(line);
 						}
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 
 					// horizontal NE normal corner
 
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType2(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType1(line);
 					}
 				}
@@ -62,7 +61,6 @@ public class TriangleBuilder {
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsY(line.getMidpoint().getY()) && !l.containsX(line.getMidpoint().getX()))
-							&& (l.getMinX() >= shape.getSuppositiveCenterPoint().getX() && l.getMinX() <= line.getMinX())
 							&& (l.getMaxX() >= shape.getSuppositiveCenterPoint().getX() && l.getMaxX() <= line.getMinX())) {
 
 						crossingLinesCounter++;
@@ -71,20 +69,20 @@ public class TriangleBuilder {
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType3(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType1(line);
 						}
 
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 
 					// vertica NE normal
 
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType2(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType4(line);
 					}
 				}
@@ -102,7 +100,6 @@ public class TriangleBuilder {
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsX(line.getMidpoint().getX()) && !l.containsY(line.getMidpoint().getY()))
-							&& (l.getMinY() >= shape.getSuppositiveCenterPoint().getY() && l.getMinY() <= line.getMinY())
 							&& (l.getMaxY() >= shape.getSuppositiveCenterPoint().getY() && l.getMaxY() <= line.getMinY())) {
 
 						crossingLinesCounter++;
@@ -111,19 +108,19 @@ public class TriangleBuilder {
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType3(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else  {
 							triangle = this.buildTriangleType4(line);
 						}
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 
 					// horizontal NW normal corner
 
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType2(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType1(line);
 					}
 				}
@@ -132,8 +129,7 @@ public class TriangleBuilder {
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsY(line.getMidpoint().getY()) && !l.containsX(line.getMidpoint().getX()))
-							&& (l.getMinX() <= shape.getSuppositiveCenterPoint().getX() && l.getMinX() >= line.getMaxX())
-							&& (l.getMaxX() <= shape.getSuppositiveCenterPoint().getX() && l.getMaxX() >= line.getMaxX())) {
+							&& (l.getMinX() <= shape.getSuppositiveCenterPoint().getX()&& l.getMinX() >= line.getMaxX())) {
 
 						crossingLinesCounter++;
 
@@ -141,20 +137,20 @@ public class TriangleBuilder {
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType2(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType4(line);
 						}
 
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 
 					// vertical NW normal
 
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType3(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType1(line);
 					}
 				}
@@ -172,8 +168,7 @@ public class TriangleBuilder {
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsX(line.getMidpoint().getX()) && !l.containsY(line.getMidpoint().getY()))
-							&& (l.getMinY() <= shape.getSuppositiveCenterPoint().getY() && l.getMinY() >= line.getMaxY())
-							&& (l.getMaxY() <= shape.getSuppositiveCenterPoint().getY() && l.getMaxY() >= line.getMaxY())) {
+							&& (l.getMinY() <= shape.getSuppositiveCenterPoint().getY() && l.getMinY() >= line.getMaxY())) {
 
 						// horizonta SE hidden corner
 
@@ -181,49 +176,48 @@ public class TriangleBuilder {
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType2(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType1(line);
 						}
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 
 					// horizontal SE normal corner
 
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType3(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType4(line);
 					}
 				}
 			} else if ((relatedLines != null && relatedLines.size() <= 2)
 					&& (relatedLines.get(0).isVerticalLine() || relatedLines.get(1).isVerticalLine())) {
-				
+
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsY(line.getMidpoint().getY()) && !l.containsX(line.getMidpoint().getX()))
-							&& (l.getMinX() >= shape.getSuppositiveCenterPoint().getX() && l.getMinX() <= line.getMinX())
-							&& (l.getMaxX() >= shape.getSuppositiveCenterPoint().getX() && l.getMaxX() <= line.getMinX())) {
+							&& (l.getMinX() >= shape.getSuppositiveCenterPoint().getX() && l.getMinX() <= line.getMinX())) {
 
 						crossingLinesCounter++;
 
-						// vertical NE hidden corner
+						// vertical SE hidden corner
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType3(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType1(line);
 						}
 
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 					// vertical SE normal corner
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType2(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType4(line);
 					}
 				}
@@ -241,8 +235,7 @@ public class TriangleBuilder {
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsX(line.getMidpoint().getX()) && !l.containsY(line.getMidpoint().getY()))
-							&& (l.getMinY() <= shape.getSuppositiveCenterPoint().getY() && l.getMinY() >= line.getMaxY())
-							&& (l.getMaxY() <= shape.getSuppositiveCenterPoint().getY() && l.getMaxY() >= line.getMaxY())) {
+							&& (l.getMinY() <= shape.getSuppositiveCenterPoint().getY() && l.getMinY() >= line.getMaxY())) {
 
 						crossingLinesCounter++;
 
@@ -250,47 +243,46 @@ public class TriangleBuilder {
 
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType2(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType1(line);
 						}
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 					// horizontal SW normal corner
 
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType3(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType4(line);
 					}
 				}
 			} else if ((relatedLines != null && relatedLines.size() <= 2)
 					&& (relatedLines.get(0).isVerticalLine() || relatedLines.get(1).isVerticalLine())) {
-				
+
 				for (Line l : shape.getLines()) {
 
 					if ((l.containsY(line.getMidpoint().getY()) && !l.containsX(line.getMidpoint().getX()))
-							&& (l.getMinX() <= shape.getSuppositiveCenterPoint().getX() && l.getMinX() >= line.getMaxX())
-							&& (l.getMaxX() <= shape.getSuppositiveCenterPoint().getX() && l.getMaxX() >= line.getMaxX())) {
+							&& (l.getMinX() <= shape.getSuppositiveCenterPoint().getX() && l.getMinX() >= line.getMaxX())) {
 
 						crossingLinesCounter++;
 
 						// vertical SW hidden corner
 						if (line.getStartX() > line.getEndX()) {
 							triangle = this.buildTriangleType2(line);
-						} else if (line.getStartX() < line.getEndX()) {
+						} else {
 							triangle = this.buildTriangleType4(line);
 						}
 
 					}
 				}
-				
+
 				if (crossingLinesCounter == 0) {
 					// SW normal
 					if (line.getStartX() > line.getEndX()) {
 						triangle = this.buildTriangleType3(line);
-					} else if (line.getStartX() < line.getEndX()) {
+					} else {
 						triangle = this.buildTriangleType1(line);
 					}
 				}
@@ -303,7 +295,7 @@ public class TriangleBuilder {
 		System.out.println("write new sides to main polygon");
 		shape.getLines().add(triangle.getLines().get(0));
 		shape.getLines().add(triangle.getLines().get(1));
-
+		System.out.println("remove current angle line");
 		shape.getLines().remove(line);
 		return triangle;
 	}
